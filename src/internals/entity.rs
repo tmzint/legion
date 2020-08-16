@@ -11,7 +11,7 @@ use std::{
 };
 
 /// An opaque identifier for an entity.
-#[derive(Debug, Copy, PartialEq, Eq, Hash)]
+#[derive(Debug, Copy, PartialEq, Eq, Hash, Ord, PartialOrd)]
 #[repr(transparent)]
 pub struct Entity(u64);
 
